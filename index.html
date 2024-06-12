@@ -128,7 +128,7 @@
           <li>
             <a href="/">Home</a>
           </li>
-          <li><a href="/about">About</a></li>
+          <li><a href="#about-us">About</a></li>
           <li>
             <a href="#">Services</a>
             <!-- <ul class="sub-menu">
@@ -458,13 +458,23 @@
         </div>
       </div>
       <div class="row">
+        <style>
+          .choose-content h3 span {
+            background: linear-gradient(90deg, #bbf737 0%, #ffee62 100%);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 20px;
+          }
+        </style>
         <div class="col-lg-3 col-md-4">
           <div class="single-choose-us-box">
-            <div class="choose-icon">
+            <!-- <div class="choose-icon">
               <img src="../assets/images/resource/chose1.png" alt="" />
-            </div>
+            </div> -->
             <div class="choose-content">
-              <h3>Cache Prefetching
+              <h3><span>Cache Prefetching</span>
               </h3>
               <p>
                 Pre-cache content on servers to alleviate surges in requests to the origin server during the release of
@@ -475,11 +485,11 @@
         </div>
         <div class="col-lg-3 col-md-4">
           <div class="single-choose-us-box upper">
-            <div class="choose-icon">
+            <!-- <div class="choose-icon">
               <img src="../assets/images/resource/chose2.png" alt="" />
-            </div>
+            </div> -->
             <div class="choose-content">
-              <h3>Origin Shielding</h3>
+              <h3> <span>Origin Shielding</span></h3>
               <p>
 
                 Employing an extra cache layer ahead of the origin serves to avert server overload during periods of
@@ -490,11 +500,11 @@
         </div>
         <div class="col-lg-3 col-md-4">
           <div class="single-choose-us-box upper">
-            <div class="choose-icon">
+            <!-- <div class="choose-icon">
               <img src="../assets/images/resource/chose2.png" alt="" />
-            </div>
+            </div> -->
             <div class="choose-content">
-              <h3>Large File Delivery Optimization
+              <h3><span>Large File Delivery Optimization</span>
               </h3>
               <p>
                 Enhance content delivery by dividing sizable files into smaller segments (less than 10 MB) and
@@ -505,11 +515,11 @@
         </div>
         <div class="col-lg-3 col-md-4">
           <div class="single-choose-us-box upper2">
-            <div class="choose-icon">
+            <!-- <div class="choose-icon">
               <img src="../assets/images/resource/chose3.png" alt="" />
-            </div>
+            </div> -->
             <div class="choose-content">
-              <h3>Cache Sharding
+              <h3> <span>Cache Sharding</span>
               </h3>
               <p>
                 Decrease both response time and the volume of requests to the origin by implementing a shared cache
@@ -706,18 +716,26 @@
   </div>
   <div class="breatcam-section d-flex align-items-center" id="about-us">
     <div class="container">
-      <div class="row dream-bg align-items-center">
-        <div class="col-lg-12">
-          <div class="breatcam-content text-center">
+      <div class="row dream-bg align-items-left">
+        <div class="col-lg-6">
+          <div class="breatcam-content text-left">
             <h4><span> About Us </span></h4>
             <h1>Working together leads to</h1>
             <h1>Amazing Outcomes.</h1>
 
-            <p>
+            <p style="width: 100%; margin: 0;">
               Mango CDN is a global leader in public cloud and edge computing, content delivery, hosting, and security
               solutions. We manage a global infrastructure designed to provide enterprise-level businesses with
               first-class edge and cloud-based services.
             </p>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+          <div class="about-left-thumb">
+            <img src="https://html.ditsolution.net/dexon/assets/images/resource/about4.png" alt="" />
           </div>
         </div>
         <div class="inner-page-shape">
@@ -842,17 +860,7 @@
           </div>
         </div>
       </div>
-      <div class="row call-bg">
-        <div class="col-lg-12">
-          <div class="dexon-section-title text-center white">
-            <h1>Mango CDN</h1>
-            <h1>Worldwide. Rapid. Versatile.</h1>
-          </div>
-          <div class="dexon-button2 text-center">
-            <a href="#contact-link">Get Started <i class="bi-arrow-right-short"></i></a>
-          </div>
-        </div>
-      </div>
+
     </div>
   </div>
   <div class="contact-us" id="contact-link">
@@ -943,8 +951,7 @@
             <div class="menu-quick-link-content">
               <ul class="footer-menu">
                 <li><a href="/index.html"> Home </a></li>
-                <li><a href="/about"> About</a></li>
-                <li><a href=""> Services </a></li>
+                <li><a href="#about-us"> About</a></li>
                 <li><a href="#contact-link"> Contact Us</a></li>
               </ul>
             </div>
