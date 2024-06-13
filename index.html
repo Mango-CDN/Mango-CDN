@@ -38,6 +38,8 @@
   <!-- modernizr js -->
   <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
   <link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet" />
+
+
 </head>
 
 <body>
@@ -888,29 +890,29 @@
           </div>
           <!-- contact form box -->
           <div class="contact-form-box3">
-            <form action="https://formspree.io/f/myyleorq" method="POST" id="dreamit-form">
+            <form id="dreamit-form">
               <div class="row">
                 <div class="col-lg-12">
                   <h6 class="form-title">Name*</h6>
                   <div class="form-box">
-                    <input type="text" placeholder="Enter Your Name" />
+                    <input type="text" id="lname" name="name" placeholder="Enter Your Name" />
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <h6 class="form-title">Your E-Mail*</h6>
                   <div class="form-box">
-                    <input type="text" placeholder="Enter E-Mail" />
+                    <input type="text" id="lemail" name="email" placeholder="Enter E-Mail" />
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="form-box">
                     <h6 class="form-title">Comment*</h6>
-                    <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Write Comment"></textarea>
+                    <textarea id="lmessage" name="massage" cols="30" rows="10" placeholder="Write Comment"></textarea>
                   </div>
                 </div>
                 <div class="col-lg-12">
                   <div class="contact-form style-two">
-                    <button type="submit">Submit Now</button>
+                    <button type="submit" onclick="sendMail()">Submit Now</button>
                   </div>
                 </div>
               </div>
@@ -1077,6 +1079,25 @@
     <script src="assets/js/jquery.barfiller.js"></script>
 
     <script src="assets/js/theme.js"></script>
+
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "0RqS1OVjlpA5vn2ni",
+        });
+      })();
+    </script>
+
+    <script src="script.js"></script>
+    <script>
+      
+       
+    </script>
 </body>
 
 </html>
