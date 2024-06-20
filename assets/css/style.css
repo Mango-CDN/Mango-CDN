@@ -700,6 +700,7 @@ ul.sub-menu li:hover a span {
 
 .dexon-section-title h1 {
     font-size: 38px;
+
     line-height: 44px;
     margin: 0;
 }
@@ -2607,7 +2608,7 @@ ul.footer-menu li a:hover {
 .breatcam-content h4 span {
     font-size: 14px;
     padding: 10px 25px;
-    background: #ffde5d;
+    background: linear-gradient(90deg, #bbf737 0%, #ffee62 100%);
     display: inline-block;
     border-radius: 4px;
     font-weight: 500;
@@ -2615,6 +2616,7 @@ ul.footer-menu li a:hover {
     font-family: 'Kumbh Sans';
     text-transform: uppercase;
     margin: 0 0 15px;
+
 }
 
 span.breatcam-title {
